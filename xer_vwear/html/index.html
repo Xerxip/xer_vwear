@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEHICLE STATUS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="header">
+            <h1>VEHICLE STATUS</h1>
+            <div class="plate" id="plate">UNKNOWN</div>
+        </div>
+
+        <div class="mileage-section">
+            <div class="label">Total Mileage</div>
+            <div class="value" id="mileage">0</div>
+            <div class="unit">km</div>
+        </div>
+
+        <div class="parts-grid">
+            <div class="part">
+                <img src="assets/engine.png" alt="Engine">
+                <div class="name">Engine</div>
+                <div class="bar"><div class="fill" id="engine-fill"></div></div>
+                <div class="percent" id="engine">100%</div>
+            </div>
+            <div class="part">
+                <img src="assets/transmission.png" alt="Transmission">
+                <div class="name">Transmission</div>
+                <div class="bar"><div class="fill" id="transmission-fill"></div></div>
+                <div class="percent" id="transmission">100%</div>
+            </div>
+            <div class="part">
+                <img src="assets/brakes.png" alt="Brakes">
+                <div class="name">Brakes</div>
+                <div class="bar"><div class="fill" id="brakes-fill"></div></div>
+                <div class="percent" id="brakes">100%</div>
+            </div>
+            <div class="part">
+                <img src="assets/suspension.png" alt="Suspension">
+                <div class="name">Suspension</div>
+                <div class="bar"><div class="fill" id="suspension-fill"></div></div>
+                <div class="percent" id="suspension">100%</div>
+            </div>
+            <div class="part">
+                <img src="assets/tires.png" alt="Tires">
+                <div class="name">Tires</div>
+                <div class="bar"><div class="fill" id="tires-fill"></div></div>
+                <div class="percent" id="tires">100%</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Press <kbd>INSERT</kbd> or type <kbd>/vehstatus</kbd> • ESC to close
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
